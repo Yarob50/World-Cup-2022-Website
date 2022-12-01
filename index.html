@@ -1445,7 +1445,7 @@
 
     function getStandings()
     {
-        const url = `${baseUrl}/competitions/2000/standings`
+        const url = `https://cors-anywhere.herokuapp.com/${baseUrl}/competitions/2000/standings`
         axios.get(url, {
             headers: {
                 "X-Auth-Token": `${token}`
@@ -1544,7 +1544,7 @@
 
     function getMatches()
     {
-        const url = `${baseUrl}/competitions/2000/matches`
+        const url = `https://cors-anywhere.herokuapp.com/${baseUrl}/competitions/2000/matches`
 
         console.log(url, token)
         axios.get(url, {
