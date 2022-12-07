@@ -4,112 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
-
-    <!-- SCRIPTS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
     <title>Document</title>
 
-    <style>
-        body {
-            font-family: 'Almarai', sans-serif;
-        }
-
-        .bg-primary {
-            background-color: #8a1538 !important;
-            color: white;
-        }
-
-        .bg-secondary {
-            background-color: #5b0d25 !important;
-            color: white;
-        }
-
-        #header {
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
-            border-bottom: solid 20px #5b0d25;
-        }
-
-        #header-background {
-            background-image: url("pattern.png");
-        }
-
-        #logo-header {
-            position: absolute;
-            z-index: 999;
-            left: 100px;
-            top: 60px;
-        }
-
-        #logo-img {
-            -webkit-filter: drop-shadow(5px 5px 50px #222);
-            filter: drop-shadow(5px 5px 30px #222);
-        }
-
-        #header-border {
-            height: 200px;
-            background: #5b0d25;
-            position: relative;
-            top: -203px;
-            z-index: -9;
-        }
+    <!-- LIBRARIES -->
+        <!-- BOOTSTRAP -->        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <!--// BOOTSTRAP //-->  
+        
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+        <!--// GOOGLE FONTS //-->
 
 
-    </style>
+        <style>
+            body {
+                font-family: 'Almarai', sans-serif;
+            }
+
+            .bg-primary {
+                background: #811538 !important;
+                color: white;
+            }
+
+            .bg-secondary {
+                background: #5b0d25 !important;
+                color: white;
+            }
+
+            #header-background {
+                background-image: url("pattern.png");
+            }
+
+            #header {
+                clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+                border-bottom: solid 20px #5b0d25;
+            }
+
+            #logo-header {
+                position: absolute;
+                z-index: 999;
+                left: 100px;
+                top: 60px;
+            }
+
+            #logo-img {
+                height: 300px;
+                -webkit-filter: drop-shadow(5px 5px 30px #222);
+                filter: drop-shadow(5px 5px 30px #222);
+            }
+        </style>
 </head>
 <body>
-    <!-- HEADER -->
+    
+    <!-- LOGO HEADER -->
     <div id="logo-header">
-        <img id="logo-img" src="logo.png" alt="" style="height: 300px;">
+        <img id="logo-img" src="logo.png" alt="">
     </div>
+    <!-- LOGO HEADER -->
 
-    <div id="header" style="height: 20rem" class="bg-primary">
-        <div id="header-background" style="height: 100%; width: 100%">
-            <div style="direction: rtl; font-size: 50px; margin-right: 100px" class="p-5">
-                <h1 style="font-weight: 800; font-size: 70px">
-                    كأس
-                </h1>
 
-                <h1 style="font-weight: 800; font-size: 90px">
-                    العالم
-                </h1>
+    <!-- HEADER -->
+    <div id="header" style="height: 20rem;" class="bg-primary">
+        <div id="header-background" style="width: 100%; height: 100%;">
+
+            <div class="p-5" style="direction: rtl; font-size: 50px; margin-right: 100px; color: white">
+                <h1 style="font-size: 70px; font-weight: 800;">كأس</h1>
+                <h1 style="font-size: 90px; font-weight: 800">العالم</h1>
             </div>
         </div>
     </div>
-    <!-- HEADER -->
+    <!--// HEADER //-->
 
-    <!-- HEADER BORDER -->
-    <!-- <div id="header-border">
-
-    </div> -->
-    
-    <!-- // HEADER BORDER // -->
 
     <!-- QATAR WORD -->
-    <div class="d-flex justify-content-center"style="margin-top: 30px">
-        <img src="qatar-word.png" alt="" style="width: 400px; margin: 0px auto">
+    <div class="d-flex justify-content-center" style="margin-top: 30px;">
+        <img src="qatar-word.png" alt="" style="width: 400px">
     </div>
     <!--// QATAR WORD //-->
 
-    <!-- HEADER IMAGE -->
-    <!-- <div>
-        <img src="qatar.jpg" style="width: 100%" alt="">
-    </div> -->
 
+    <!-- MAIN CONTENT -->
     <div class="container" style="margin-top: 50px">
 
-        <!-- GROUPS -->
-        <div  class="p-5 mt-1">
+        <!-- STANDINGS -->
+        <div class="p-5 mt-1">
 
             <!-- TITLE ROW -->
             <div class="row" style="direction: rtl;">
                 <h1>
-                    <b>المجموعات</b>
+                    <b>
+                    المجموعات
+                    </b>
                 </h1>
                 <hr>
             </div>
@@ -118,1425 +106,1669 @@
             <!-- STANDINGS ROW -->
             <div class="row" id="standings">
 
-                <!-- GROUP COL -->
-                <div class="col-lg-6">
+
+                <!-- STANDING COL -->
+                <div class="col-sm-6 mb-4">
                     <div class="card shadow border-none">
-                        <div class="card-header bg-primary" style="text-align: center">
+                        <div class="card-header bg-primary" style="text-align: center;">
                             <b>Group (A)</b>
                         </div>
+
                         <div class="row m-0 bg-secondary">
-                            <div class="col-lg-4" style="text-align: center;">
+                            <div class="col-sm-4" style="text-align: center;">
                                 team
-                            </div>
-                            <div class="col-lg-2">
+                            </div> 
+                            
+                            <div class="col-sm-2" style="text-align: center;">
                                 W
-                            </div>
-                            <div class="col-lg-2">
-                                L
-                            </div>
-                            <div class="col-lg-2">
-                                D
-                            </div>
-                            <div class="col-lg-2">
-                                Pts
-                            </div>
-                        </div>
-                        <ul class="list-group list-group-flush">
-
-                            <!-- TEAM -->
-                            <li class="list-group-item">
-                                <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
-                                        <span class="flag">
-                                            <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
-                                                style="width: 40px; height: 40px"
-                                            >
-                                        </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
-
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
-                                        2
-                                    </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
-                                        1
-                                    </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
-                                        0
-                                    </div>
-
-                                    <div class="col-lg-2">
-                                        <b>7</b>
-                                    </div>
-                                </div>
-                                
-                            </li>
-                            <!--// TEAM //-->
-
-                            <!-- TEAM -->
-                            <li class="list-group-item">
-                                <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
-                                        <span class="flag">
-                                            <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
-                                                style="width: 40px; height: 40px"
-                                            >
-                                        </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
-
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
-                                        2
-                                    </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
-                                        1
-                                    </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
-                                        0
-                                    </div>
-
-                                    <div class="col-lg-2">
-                                        <b>7</b>
-                                    </div>
-                                </div>
-                                
-                            </li>
-                            <!--// TEAM //-->
-
-                            <!-- TEAM -->
-                            <li class="list-group-item">
-                                <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
-                                        <span class="flag">
-                                            <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
-                                                style="width: 40px; height: 40px"
-                                            >
-                                        </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
-
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
-                                        2
-                                    </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
-                                        1
-                                    </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
-                                        0
-                                    </div>
-
-                                    <div class="col-lg-2">
-                                        <b>7</b>
-                                    </div>
-                                </div>
-                                
-                            </li>
-                            <!--// TEAM //-->
-
-                            <!-- TEAM -->
-                            <li class="list-group-item">
-                                <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
-                                        <span class="flag">
-                                            <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
-                                                style="width: 40px; height: 40px"
-                                            >
-                                        </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
-
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
-                                        2
-                                    </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
-                                        1
-                                    </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
-                                        0
-                                    </div>
-
-                                    <div class="col-lg-2">
-                                        <b>7</b>
-                                    </div>
-                                </div>
-                                
-                            </li>
-                            <!--// TEAM //-->
-                        </ul>
-                    </div>
-                </div>
-                <!--// GROUP COL //-->
-
-                <!-- GROUP COL -->
-                <div class="col-lg-6">
-                    <div class="card shadow border-none">
-                        <div class="card-header bg-primary" style="text-align: center">
-                            <b>Group (A)</b>
-                        </div>
-                        <div class="row m-0 bg-secondary">
-                            <div class="col-lg-4" style="text-align: center;">
-                                team
-                            </div>
-                            <div class="col-lg-2">
-                                W
-                            </div>
-                            <div class="col-lg-2">
-                                L
                             </div>
                             
-                            <div class="col-lg-2">
-                                D
-                            </div>
-                            <div class="col-lg-2">
-                                Pts
-                            </div>
-                        </div>
-                        <ul class="list-group list-group-flush">
-
-                            <!-- TEAM -->
-                            <li class="list-group-item">
-                                <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
-                                        <span class="flag">
-                                            <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
-                                                style="width: 40px; height: 40px"
-                                            >
-                                        </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
-
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
-                                        2
-                                    </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
-                                        1
-                                    </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
-                                        0
-                                    </div>
-
-                                    <div class="col-lg-2">
-                                        <b>7</b>
-                                    </div>
-                                </div>
-                                
-                            </li>
-                            <!--// TEAM //-->
-
-                            <!-- TEAM -->
-                            <li class="list-group-item">
-                                <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
-                                        <span class="flag">
-                                            <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
-                                                style="width: 40px; height: 40px"
-                                            >
-                                        </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
-
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
-                                        2
-                                    </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
-                                        1
-                                    </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
-                                        0
-                                    </div>
-
-                                    <div class="col-lg-2">
-                                        <b>7</b>
-                                    </div>
-                                </div>
-                                
-                            </li>
-                            <!--// TEAM //-->
-
-                            <!-- TEAM -->
-                            <li class="list-group-item">
-                                <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
-                                        <span class="flag">
-                                            <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
-                                                style="width: 40px; height: 40px"
-                                            >
-                                        </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
-
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
-                                        2
-                                    </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
-                                        1
-                                    </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
-                                        0
-                                    </div>
-
-                                    <div class="col-lg-2">
-                                        <b>7</b>
-                                    </div>
-                                </div>
-                                
-                            </li>
-                            <!--// TEAM //-->
-
-                            <!-- TEAM -->
-                            <li class="list-group-item">
-                                <div class="row">
-
-                                    <!-- TEAM -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
-                                        <span class="flag">
-                                            <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
-                                                style="width: 40px; height: 40px"
-                                            >
-                                        </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM //-->
-
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
-                                        2
-                                    </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
-                                        1
-                                    </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
-                                        0
-                                    </div>
-
-                                    <div class="col-lg-2">
-                                        <b>7</b>
-                                    </div>
-                                </div>
-                                
-                            </li>
-                            <!--// TEAM //-->
-                        </ul>
-                    </div>
-                </div>
-                <!--// GROUP COL //-->
-
-                <!-- GROUP COL -->
-                <div class="col-lg-6 mt-3">
-                    <div class="card shadow border-none">
-                        <div class="card-header bg-primary" style="text-align: center">
-                            <b>Group (A)</b>
-                        </div>
-                        <div class="row m-0 bg-secondary">
-                            <div class="col-lg-4" style="text-align: center;">
-                                team
-                            </div>
-                            <div class="col-lg-2">
-                                W
-                            </div>
-                            <div class="col-lg-2">
+                            <div class="col-sm-2" style="text-align: center;">
                                 L
                             </div>
-                            <div class="col-lg-2">
+
+                            <div class="col-sm-2" style="text-align: center;">
                                 D
                             </div>
-                            <div class="col-lg-2">
+
+                            <div class="col-sm-2" style="text-align: center;">
                                 Pts
                             </div>
                         </div>
+
+                        <!-- TEAMS -->
                         <ul class="list-group list-group-flush">
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
                         </ul>
+                        <!--// TEAMS //-->
                     </div>
                 </div>
-                <!--// GROUP COL //-->
+                <!--// STANDING COL //-->
 
-                <!-- GROUP COL -->
-                <div class="col-lg-6 mt-3">
+                <!-- STANDING COL -->
+                <div class="col-sm-6 mb-4">
                     <div class="card shadow border-none">
-                        <div class="card-header bg-primary" style="text-align: center">
+                        <div class="card-header bg-primary" style="text-align: center;">
                             <b>Group (A)</b>
                         </div>
+
                         <div class="row m-0 bg-secondary">
-                            <div class="col-lg-4" style="text-align: center;">
+                            <div class="col-sm-4" style="text-align: center;">
                                 team
-                            </div>
-                            <div class="col-lg-2">
+                            </div> 
+                            
+                            <div class="col-sm-2" style="text-align: center;">
                                 W
                             </div>
-                            <div class="col-lg-2">
+                            
+                            <div class="col-sm-2" style="text-align: center;">
                                 L
                             </div>
-                            <div class="col-lg-2">
+
+                            <div class="col-sm-2" style="text-align: center;">
                                 D
                             </div>
-                            <div class="col-lg-2">
+
+                            <div class="col-sm-2" style="text-align: center;">
                                 Pts
                             </div>
                         </div>
+
+                        <!-- TEAMS -->
                         <ul class="list-group list-group-flush">
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
                         </ul>
+                        <!--// TEAMS //-->
                     </div>
                 </div>
-                <!--// GROUP COL //-->
+                <!--// STANDING COL //-->
 
-                <!-- GROUP COL -->
-                <div class="col-lg-6 mt-3">
+                <!-- STANDING COL -->
+                <div class="col-sm-6 mb-4">
                     <div class="card shadow border-none">
-                        <div class="card-header bg-primary" style="text-align: center">
+                        <div class="card-header bg-primary" style="text-align: center;">
                             <b>Group (A)</b>
                         </div>
+
                         <div class="row m-0 bg-secondary">
-                            <div class="col-lg-4" style="text-align: center;">
+                            <div class="col-sm-4" style="text-align: center;">
                                 team
-                            </div>
-                            <div class="col-lg-2">
+                            </div> 
+                            
+                            <div class="col-sm-2" style="text-align: center;">
                                 W
                             </div>
-                            <div class="col-lg-2">
+                            
+                            <div class="col-sm-2" style="text-align: center;">
                                 L
                             </div>
-                            <div class="col-lg-2">
+
+                            <div class="col-sm-2" style="text-align: center;">
                                 D
                             </div>
-                            <div class="col-lg-2">
+
+                            <div class="col-sm-2" style="text-align: center;">
                                 Pts
                             </div>
                         </div>
+
+                        <!-- TEAMS -->
                         <ul class="list-group list-group-flush">
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
                         </ul>
+                        <!--// TEAMS //-->
                     </div>
                 </div>
-                <!--// GROUP COL //-->
-
-                <!-- GROUP COL -->
-                <div class="col-lg-6 mt-3">
+                <!--// STANDING COL //-->
+                <!-- STANDING COL -->
+                <div class="col-sm-6 mb-4">
                     <div class="card shadow border-none">
-                        <div class="card-header bg-primary" style="text-align: center">
+                        <div class="card-header bg-primary" style="text-align: center;">
                             <b>Group (A)</b>
                         </div>
+
                         <div class="row m-0 bg-secondary">
-                            <div class="col-lg-4" style="text-align: center;">
+                            <div class="col-sm-4" style="text-align: center;">
                                 team
-                            </div>
-                            <div class="col-lg-2">
+                            </div> 
+                            
+                            <div class="col-sm-2" style="text-align: center;">
                                 W
                             </div>
-                            <div class="col-lg-2">
+                            
+                            <div class="col-sm-2" style="text-align: center;">
                                 L
                             </div>
-                            <div class="col-lg-2">
+
+                            <div class="col-sm-2" style="text-align: center;">
                                 D
                             </div>
-                            <div class="col-lg-2">
+
+                            <div class="col-sm-2" style="text-align: center;">
                                 Pts
                             </div>
                         </div>
+
+                        <!-- TEAMS -->
                         <ul class="list-group list-group-flush">
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
 
                             <!-- TEAM -->
                             <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM -->
-                                    <div class="col-lg-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                alt=""
                                                 style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">KSA</h5>
-                                    </div>
-                                    <!--// TEAM //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         2
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         1
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         0
                                     </div>
-
-                                    <div class="col-lg-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>7</b>
                                     </div>
                                 </div>
-                                
                             </li>
                             <!--// TEAM //-->
                         </ul>
+                        <!--// TEAMS //-->
                     </div>
                 </div>
-                <!--// GROUP COL //-->
+                <!--// STANDING COL //-->
 
+                <!-- STANDING COL -->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Group (A)</b>
+                        </div>
+
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div> 
+                            
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+                            
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+                        </div>
+
+                        <!-- TEAMS -->
+                        <ul class="list-group list-group-flush">
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+                        </ul>
+                        <!--// TEAMS //-->
+                    </div>
+                </div>
+                <!--// STANDING COL //-->
+
+                <!-- STANDING COL -->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Group (A)</b>
+                        </div>
+
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div> 
+                            
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+                            
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+                        </div>
+
+                        <!-- TEAMS -->
+                        <ul class="list-group list-group-flush">
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+                        </ul>
+                        <!--// TEAMS //-->
+                    </div>
+                </div>
+                <!--// STANDING COL //-->
+                <!-- STANDING COL -->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Group (A)</b>
+                        </div>
+
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div> 
+                            
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+                            
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+                        </div>
+
+                        <!-- TEAMS -->
+                        <ul class="list-group list-group-flush">
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+                        </ul>
+                        <!--// TEAMS //-->
+                    </div>
+                </div>
+                <!--// STANDING COL //-->
+                <!-- STANDING COL -->
+                <div class="col-sm-6 mb-4">
+                    <div class="card shadow border-none">
+                        <div class="card-header bg-primary" style="text-align: center;">
+                            <b>Group (A)</b>
+                        </div>
+
+                        <div class="row m-0 bg-secondary">
+                            <div class="col-sm-4" style="text-align: center;">
+                                team
+                            </div> 
+                            
+                            <div class="col-sm-2" style="text-align: center;">
+                                W
+                            </div>
+                            
+                            <div class="col-sm-2" style="text-align: center;">
+                                L
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                D
+                            </div>
+
+                            <div class="col-sm-2" style="text-align: center;">
+                                Pts
+                            </div>
+                        </div>
+
+                        <!-- TEAMS -->
+                        <ul class="list-group list-group-flush">
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+
+                            <!-- TEAM -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
+                                        <span class="flag">
+                                            <img 
+                                                style="width: 40px; height: 40px"
+                                                class="rounded-circle"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                            >
+                                        </span>
+
+                                        <h5 style="margin: auto 4px">
+                                            <b>KSA</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        2
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        1
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        0
+                                    </div>
+        
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        <b>7</b>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--// TEAM //-->
+                        </ul>
+                        <!--// TEAMS //-->
+                    </div>
+                </div>
+                <!--// STANDING COL //-->
+
+
+                
+
+                
             </div>
+            <!--// STANDINGS ROW //-->
         </div>
-        <!--// GROUPS //-->
+        <!--// STANDINGS //-->
+
 
         <!-- MATCHES -->
-        <div id="matches " class="mt-5">
-            <div class="row" style="margin:0px">
-                <h1 style="direction: rtl;">
-                    <b>المباريات</b>
+        <div>
+
+            <!-- TITLE ROW -->
+            <div class="row" style="direction: rtl;">
+                <h1>
+                    <b>
+                    المباريات
+                    </b>
                 </h1>
                 <hr>
+            </div>
+            <!--// TITLE ROW //-->
 
-                <div class="row mb-5" id="matches">
 
-                    <!-- MATCH COL -->
-                    <div class="col-lg-12" >
+            <!-- MATCHES ROW -->
+            <div class="row" id="matches">
 
-                        <div class="card shadow rounded-pill mt-5" style="overflow: hidden">
-                            <!-- <div class="card-header bg-primary" style="text-align: center">
-                                <b>Group (A)</b>
-                            </div> -->
+                <!-- MATCH COL -->
+                <div class="col-sm-12">
 
-                            <!-- MATCH CARD -->
-                            <div class="card-body p-0">
-                                <div class="row">
+                    <div class="card shadow rounded-pill" style="overflow: hidden;">
+                        <div class="card-body p-0">
+                            <div class="row" style="height: 120px;">
 
-                                    <!-- FIRST TEAM COL -->
-                                    <div class="col-lg-3 bg-primary d-flex flex-direction-column justify-content-center align-items-center" style="border-right: solid 5px #5b0d25;">
-                                        <div class="d-flex align-items-center justify-content-center" style="text-align: center; margin: auto 0">
-                                        
-                                            <div>
-                                                <div class="flag">
-                                                    <img 
-                                                        class="rounded-circle border border-2" 
-                                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                        alt=""
-                                                        style="width: 40px; height: 40px"
-                                                    >
-                                                </div>
-                                                <h5 style="margin:auto 4px">KSA</h5>
+                                <!-- FIRST TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-right: solid 5px #5b0d25; "
+                                >
+
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rounded-circle"
+                                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                                >
                                             </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>KSA</b>
+                                            </h5>
                                         </div>
+                                        <!--// IMAGE AND TEAM NAME DIV// -->
                                     </div>
-                                    <!--// FIRST TEAM COL //-->
-
-                                    <!-- VERSUS COL -->
-                                    <div class="col-lg-6" style="text-align: center">
-                                        <h6>group (A)</h6>
-                                        <h1>X</h1>                                        
-                                        <h6>18:30</h6>
-                                    </div>
-                                    <!--// VERSUS COL //-->
-
-
-                                    <!-- SECOND TEAM COL -->
-                                    <div class="col-lg-3 bg-primary d-flex flex-direction-column justify-content-center align-items-center" style="border-left: solid 5px #5b0d25;">
-                                        <div class="d-flex align-items-center justify-content-center" style="text-align: center; margin: auto 0">
-                                        
-                                            <div>
-                                                <div class="flag">
-                                                    <img 
-                                                        class="rounded-circle border border-2" 
-                                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/560px-Flag_of_Saudi_Arabia.svg.png" 
-                                                        alt=""
-                                                        style="width: 40px; height: 40px"
-                                                    >
-                                                </div>
-                                                <h5 style="margin:auto 4px">KSA</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--// SECOND TEAM COL //-->
                                 </div>
+                                <!--// FIRST TEAM COL //-->
+
+                                <!-- MATCH INFO COL -->
+                                <div class="col-sm-6" style="text-align: center;">
+                                    <h6>Group (A)</h6>
+                                    <h1>X</h1>
+                                    <h6>18:30</h6>
+                                </div>
+                                <!--// MATCH INFO COL //-->
+
+
+                                <!-- SECOND TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-left: solid 5px #5b0d25; "
+                                >
+
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px"
+                                                    class="rounded-circle"
+                                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Saudi_Arabia_%28type_1%29.svg/1200px-Flag_of_Saudi_Arabia_%28type_1%29.svg.png" alt=""
+                                                >
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>KSA</b>
+                                            </h5>
+                                        </div>
+                                        <!--// IMAGE AND TEAM NAME DIV// -->
+                                    </div>
+                                </div>
+                                <!--// SECOND TEAM COL //-->
                             </div>
-                            <!--// MATCH CARD //-->
                         </div>
                     </div>
-                    <!--// MATCH COL //-->
-    
                 </div>
+                <!--// MATCH COL //-->
             </div>
+            <!--// MATCHES ROW //-->
+
         </div>
         <!--// MATCHES //-->
     </div>
+    <!-- // MAIN CONTENT // -->
+
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
 <script>
-
-    const token = "1f03d446703e470ba3bc872d47f6787c";
-    let baseUrl = "https://api.football-data.org/v4"
+    const token = "1f03d446703e470ba3bc872d47f6787c"
+    const baseUrl = "https://api.football-data.org/v4/competitions/2000"
 
     function getStandings()
     {
-        const url = `${baseUrl}/competitions/2000/standings`
+        const url = `${baseUrl}/standings`
+
         axios.get(url, {
             headers: {
-                "X-Auth-Token": `${token}`
+                "X-Auth-Token": token
             }
         })
         .then((response) => {
             
             const standings = response.data.standings
-
+            
             document.getElementById("standings").innerHTML = ""
             for(standing of standings)
             {
-                let tableContent = ``
+                let tableContent = ""
 
-                for(row of standing.table)
-                {
-                    tableContent += `
-                        <li class="list-group-item">
+                for(row of standing.table){
+
+                    tableContent+= `
+                    <!-- TEAM -->
+                            <li class="list-group-item">
                                 <div class="row">
-
-                                    <!-- TEAM & KSA -->
-                                    <div class="col-lg-4 col-sm-4 d-flex align-items-center justify-content-center" style="text-align: center;">
-                                        
+                                    <div class="col-sm-4 d-flex justify-content-center align-itmes-center" style="text-align: center;">
                                         <span class="flag">
                                             <img 
-                                                class="rounded-circle border border-2" 
-                                                src="${row.team.crest}" 
-                                                alt=""
                                                 style="width: 40px; height: 40px; object-fit: cover"
+                                                class="rounded-circle border border-2"
+                                                src="${row.team.crest}" alt=""
                                             >
                                         </span>
-                                        <h5 style="margin:auto 4px">${row.team.tla}</h5>
-                                    </div>
-                                    <!--// TEAM & KSA //-->
 
-                                    <!-- WIN -->
-                                    <div class="col-lg-2 col-sm-2">
+                                        <h5 style="margin: auto 4px">
+                                            <b>${row.team.tla}</b>
+                                        </h5>
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         ${row.won}
                                     </div>
-                                    <!--// WIN //-->
-
-                                    <!-- LOSS -->
-                                    <div class="col-lg-2 col-sm-2">
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
                                         ${row.lost}
                                     </div>
-                                    <!--// LOSS //-->
-
-                                    
-                                    <div class="col-lg-2 col-sm-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         ${row.draw}
                                     </div>
-
-                                    <div class="col-lg-2 col-sm-2">
+        
+                                    <div class="col-sm-2" style="text-align: center;">
                                         <b>${row.points}</b>
                                     </div>
                                 </div>
-                                
-                        </li>
-                        <!--// TEAM //-->
-                            `
+                            </li>
+                            <!--// TEAM //-->
+                    `                    
                 }
-
+            
                 const content = `
-                <div class="col-lg-6" style="margin-top: 20px">
-                    <div class="card shadow border-none">
-                        <div class="card-header bg-primary" style="text-align: center">
-                            <b>${standing.group}</b>
+
+                        <!-- STANDING COL -->
+                        <div class="col-sm-6 mb-4">
+                            <div class="card shadow border-none">
+                                <div class="card-header bg-primary" style="text-align: center;">
+                                    <b>${standing.group}</b>
+                                </div>
+
+                                <div class="row m-0 bg-secondary">
+                                    <div class="col-sm-4" style="text-align: center;">
+                                        team
+                                    </div> 
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        W
+                                    </div>
+                                    
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        L
+                                    </div>
+
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        D
+                                    </div>
+
+                                    <div class="col-sm-2" style="text-align: center;">
+                                        Pts
+                                    </div>
+                                </div>
+
+                                <!-- TEAMS -->
+                                <ul class="list-group list-group-flush">
+
+                                    ${tableContent}
+                                </ul>
+                                <!--// TEAMS //-->
+                            </div>
                         </div>
-                        <div class="row m-0 bg-secondary">
-                            <div class="col-lg-4 col-sm-4" style="text-align: center;">
-                                team
-                            </div>
-                            <div class="col-lg-2 col-sm-2">
-                                W
-                            </div>
-                            <div class="col-lg-2 col-sm-2">
-                                L
-                            </div>
-                            <div class="col-lg-2 col-sm-2">
-                                D
-                            </div>
-                            <div class="col-lg-2 col-sm-2">
-                                Pts
-                            </div>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                                ${tableContent}
-                        </ul>
-                    </div>
-                </div>
+                        <!--// STANDING COL //-->
+
                 `
+                        
                 document.getElementById("standings").innerHTML += content
             }
         })
@@ -1544,16 +1776,18 @@
 
     function getMatches()
     {
-        const url = `${baseUrl}/competitions/2000/matches`
+        const url = `${baseUrl}/matches`
 
-        console.log(url, token)
         axios.get(url, {
             headers: {
-                "X-Auth-Token": `${token}`
+                "X-Auth-Token": token
             }
         })
         .then((response) => {
+            console.log(response.data)
+
             const matches = response.data.matches
+
             
             document.getElementById("matches").innerHTML = ""
 
@@ -1562,103 +1796,109 @@
                 const homeTeam = match.homeTeam
                 const awayTeam = match.awayTeam
 
+                const utcDate = match.utcDate
+                const matchTime = new Date(utcDate)
+                const dateString = matchTime.getUTCFullYear() + " / " + (matchTime.getUTCMonth()+1) + " / " + matchTime.getUTCDate() + " " + matchTime.getUTCHours() + ":" + matchTime.getUTCMinutes()
+
                 if(homeTeam.name == null)
                 {
                     continue
                 }
-
-                const comp = match.competition
-                const dateUtc = match.utcDate
-                const matchTime = new Date(dateUtc)
-                const dateString = matchTime.getUTCFullYear() +"/"+ (matchTime.getUTCMonth()+1) +"/"+ matchTime.getUTCDate() + " " + matchTime.getUTCHours() + ":" + matchTime.getUTCMinutes() + ":" + matchTime.getUTCSeconds()
-                
-
-                
                 const content = `
-                    <!-- MATCH COL -->
-                    <div class="col-lg-12" >
+                <div class="col-sm-12">
 
-                        <div class="card shadow rounded-pill mt-5" style="overflow: hidden">                            
+                    <div class="card shadow rounded-pill mt-5" style="overflow: hidden;">
+                        <div class="card-body p-0">
+                            <div class="row" style="height: 120px;">
 
-                            <!-- MATCH CARD -->
-                            <div class="card-body p-0">
-                                <div class="row">
+                                <!-- FIRST TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-right: solid 5px #5b0d25; "
+                                >
 
-                                    <!-- FIRST TEAM COL -->
-                                    <div class="col-lg-3 bg-primary d-flex flex-direction-column justify-content-center align-items-center" style="border-right: solid 5px #5b0d25;">
-                                        <div class="d-flex align-items-center justify-content-center" style="text-align: center; margin: auto 0">
-                                        
-                                            <div>
-                                                <div class="flag">
-                                                    <img 
-                                                        class="rounded-circle border border-2" 
-                                                        src="${homeTeam.crest}" 
-                                                        alt=""
-                                                        style="width: 40px; height: 40px; object-fit: cover"
-                                                    >
-                                                </div>
-                                                <h5 style="margin:auto 4px">${homeTeam.tla}</h5>
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px; object-fit: cover"
+                                                    class="rounded-circle"
+                                                    src="${homeTeam.crest}" alt=""
+                                                >
                                             </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>${homeTeam.tla}</b>
+                                            </h5>
                                         </div>
+                                        <!--// IMAGE AND TEAM NAME DIV// -->
                                     </div>
-                                    <!--// FIRST TEAM COL //-->
-
-                                    <!-- VERSUS COL -->
-                                    <div class="col-lg-6" style="text-align: center">
-                                        <div class="row">
-                                            <div class="col-lg-4" style="margin: auto 0px">
-                                                <h3>
-                                                    ${match.score.fullTime.home ?? '-'}
-                                                </h3>
-                                            </div>
-
-                                            <div class="col-lg-4">
-                                                <h6>${match.group}</h6>
-                                                <h1>X</h1>                                        
-                                                <h6>${dateString}</h6>
-                                            </div>
-
-                                            <div class="col-lg-4" style="margin: auto 0px">
-                                                <h3>
-                                                    ${match.score.fullTime.away ?? '-'}
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--// VERSUS COL //-->
-
-
-                                    <!-- SECOND TEAM COL -->
-                                    <div class="col-lg-3 bg-primary d-flex flex-direction-column justify-content-center align-items-center" style="border-left: solid 5px #5b0d25;">
-                                        <div class="d-flex align-items-center justify-content-center" style="text-align: center; margin: auto 0">
-                                        
-                                            <div>
-                                                <div class="flag">
-                                                    <img 
-                                                        class="rounded-circle border border-2" 
-                                                        src="${awayTeam.crest}" 
-                                                        alt=""
-                                                        style="width: 40px; height: 40px; object-fit: cover"
-                                                    >
-                                                </div>
-                                                <h5 style="margin:auto 4px">${awayTeam.tla}</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--// SECOND TEAM COL //-->
                                 </div>
+                                <!--// FIRST TEAM COL //-->
+
+                                <!-- MATCH INFO COL -->
+                                <div class="col-sm-6" style="text-align: center;">
+                                    <div class="row">
+                                        <div class="col-sm-4" style="margin: auto 0px">
+                                            <h3>
+                                                ${match.score.fullTime.home ?? "-"}
+                                            </h3>
+                                        </div>
+
+                                        <div class="col-sm-4" style="margin: auto 0px">
+                                            <h6>${match.group}</h6>
+                                            <h1>X</h1>
+                                            <h6>${dateString}</h6>
+                                        </div>
+
+                                        <div class="col-sm-4" style="margin: auto 0px">
+                                            <h3>
+                                                ${match.score.fullTime.away ?? "-"}
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <!--// MATCH INFO COL //-->
+
+
+                                <!-- SECOND TEAM COL -->
+                                <div 
+                                    class="col-sm-3 bg-primary d-flex flex-direction-column justify-content-center align-itmes-center"
+                                    style="border-left: solid 5px #5b0d25; "
+                                >
+
+                                    <div class="d-flex align-items-center justify-content-center" >
+                                        <!-- IMAGE AND TEAM NAME DIV -->
+                                        <div>
+                                            <div class="flag">
+                                                <img 
+                                                    style="width: 40px; height: 40px; object-fit: cover"
+                                                    class="rounded-circle"
+                                                    src="${awayTeam.crest}" alt=""
+                                                >
+                                            </div>
+
+                                            <h5 style="margin: auto 4px">
+                                                <b>${awayTeam.tla}</b>
+                                            </h5>
+                                        </div>
+                                        <!--// IMAGE AND TEAM NAME DIV// -->
+                                    </div>
+                                </div>
+                                <!--// SECOND TEAM COL //-->
                             </div>
-                            <!--// MATCH CARD //-->
                         </div>
                     </div>
-                    <!--// MATCH COL //-->
-                    
+                </div>
                 `
+                
                 document.getElementById("matches").innerHTML += content
             }
-        })
+         })
     }
-
+    
     getStandings()
     getMatches()
 </script>
